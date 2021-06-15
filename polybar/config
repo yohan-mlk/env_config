@@ -290,13 +290,13 @@ date-alt =
 
 ;time = "%H:%M"
 time = "%H:%M:%S"
-time-alt = "%H:%M "
+time-alt = "%H:%M"
 
 #format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
-label = "%date% %time%"
+label = "%date% %time% "
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -304,10 +304,15 @@ type = internal/pulseaudio
 #format-volume = <label-volume> <bar-volume>
 format-volume = <label-volume> 
 label-volume = |%percentage%%|
-label-volume-foreground = ${root.foreground}
+#label-volume-foreground = ${root.foreground}
+label-volume-foreground = #60db6b
 
-label-muted = 🔇 muted
-label-muted-foreground = #666
+#label-muted = 🔇 muted
+label-muted = " Shut Da Fuck UP "
+#label-muted-foreground = #666
+#label-muted-foreground = #d43333
+label-muted-foreground = #FF0000
+label-muted-background = #3c403d
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55

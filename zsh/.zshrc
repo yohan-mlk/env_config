@@ -126,7 +126,7 @@ set -o noclobber
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sb="source $HOME/.zshrc && echo \"$HOME/.zshrc updated\""
+alias upbash="source $HOME/.zshrc && echo \"$HOME/.zshrc updated\""
 alias grep="grep --color=auto"
 alias pingem="ping 8.8.8.8"
 alias poingem="pingem"
@@ -147,7 +147,10 @@ alias ctk="xmodmap $HOME/.config/custom_keyboard.conf"
 alias printmycommand="ls -h $HOME/myscripts/bin"
 alias atc="autoconnect"
 alias aths="autosms '#hotspot on' && while true; do autoconnect The_Xperia_Melouki && exit; done"
+alias athsset="autosms '#hotspot'"
 alias y="youtube-dl"
+alias bat="cat /sys/class/power_supply/BAT0/capacity"
+alias sshagent="eval $(ssh-agent -s) ; ssh-add ~/.ssh/private_keys/github ; ssh -T git@github.com"
 
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh

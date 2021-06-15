@@ -225,6 +225,7 @@ bindsym Mod1+c exec --no-startup-id urxvt -e vim ~/mynotes/cheatnotes/bash_usefu
 bindsym Mod1+h exec --no-startup-id urxvt -e vim ~/mynotes/cheatnotes/bash_script.txt
 bindsym Mod1+n exec --no-startup-id urxvt -e vim ~/mynotes/"$(date +%F_%T)"
 bindsym Mod1+d exec --no-startup-id urxvt -e vim ~/mynotes/to_do_list
+bindsym Mod1+t exec --no-startup-id urxvt -e vim ~/mynotes/chronophage.txt
 
 #Changer de fond d'écran
 bindsym Shift+Mod4+w exec --no-startup-id urxvt -e feh --no-fehbg --bg-scale --randomize /home/yohan/Pictures/wallpapers/wp*
@@ -267,7 +268,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id "setbrightness -200"
 bindsym XF86MonBrightnessUp exec --no-startup-id "setbrightness +200"
 
 #Enregistrement audio on/off
-bindsym XF86AudioMicMute exec --no-startup-id "soundrecorder"
+#bindsym XF86AudioMicMute exec --no-startup-id "soundrecorder"
 
 #Screenshot
 bindsym XF86Launch1 exec --no-startup-id flameshot gui

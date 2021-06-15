@@ -40,6 +40,7 @@ set smartcase           " Active le case sensitive si lettre majuscule dans la r
 set incsearch           " Chercher pendant que l'on tape la recherche
 "set laststatus=2        " Afficher en permanence le status du fichier 
 set confirm             " Demander confirmation avant de quitter un fichier sans sauvegarder
+set nrformats-=octal    " Lorsque que l'on incrémente chiffre commençant par 0 ( 01 par exemple ), empêche vim de compter en octal
 
 
 

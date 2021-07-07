@@ -1,6 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/myscripts/bin:/usr/local/bin:$PATH
 
+# Définie la taille de l'historique 
+export HISTSIZE=1000000
+export SAVEHIST=$HISTSIZE
+export HISTFILE="$HOME/.config/zsh/.zsh_history"
+
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -194,4 +200,13 @@ bindkey '^[[3~' delete-char
     # define right prompt, regardless of whether the theme defined it
     RPS1='$(vi_mode_prompt_info)'
     RPS2=$RPS1
+
+#La ligne suivante permet de corriger un bug étrange, lorsque l'on arch-chroot via une connexion ssh.
+#Risque potentiel de casser autre chose avec urxvt. Nécessite davantage de recherche.
+#Sources : 
+#http://www.faqs.org/docs/Linux-mini/BackspaceDelete.html
+#https://askubuntu.com/questions/54145/how-to-fix-strange-backspace-behaviour-with-urxvt-zsh
+#Recherche google : urxvt arch-chroot character won't delete
+#TERM=xterm
+#TERM=xterm-256color
 
